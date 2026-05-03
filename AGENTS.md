@@ -15,9 +15,10 @@ coding agent 在协助阅读、修改、编译和测试代码时，应遵循本�
 构建示例：
 
 ```sh
+cd /Users/garfieldbc/proj/postgres
 mkdir -p tmp_build
 cd tmp_build
-../configure --prefix="$(pwd)/../output" --without-icu
+../configure --prefix="/Users/garfieldbc/proj/postgres/output" --without-icu
 time make -j$(sysctl -n hw.ncpu)
 make install
 ```
